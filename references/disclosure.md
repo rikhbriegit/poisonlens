@@ -10,6 +10,7 @@ Prepared for the UGREEN Hackathon 2026 on AI NAS, Open Innovation track, in line
 - Obfuscation checks for encoded or hidden instructions, and per-file isolation so that one document can never lower another's risk level.
 - Detection of instructions aimed at the audit itself, so that a document cannot lower its own risk level.
 - Evidence rules: minimal quotation, credential redaction, the Unverified status, and the prohibition on fabricated excerpts, locations, or tool results.
+- Batched extraction that carries findings rather than document text between batches, so a large scope cannot silently drop files.
 - The validation scenarios in SKILL.md and the calibration pairs in references/calibration.md.
 
 All of the above was newly developed during the Hackathon period.

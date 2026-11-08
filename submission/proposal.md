@@ -12,7 +12,7 @@ Home and small-business users who let Uliya read outside files: vendor proposals
 
 ## 3. Solution
 
-An on-demand, read-only Skill that reads each document, separates text addressed to an AI from ordinary content, judges whether it discusses manipulation or attempts it, and reports the quoted passage, location, category, reasoning and recommendation.
+An on-demand, read-only Skill that reads each document, separates text addressed to an AI from ordinary content, judges whether it discusses manipulation or attempts it, and reports the quoted passage, location, category, reasoning and action.
 
 ## 4. Main user flow
 
@@ -32,7 +32,7 @@ SKILL.md orchestration only; no scripts or services. Required input: a user-auth
 
 ## 8. Status
 
-Built: SKILL.md (workflow, taxonomy, risk levels, report format, failure handling), README, disclosure, 12-file test corpus. Exercised locally in Claude Code: all twelve verdicts matched the key, covering labeled-example, base64, zero-width, image-only and cross-document cases. This tests the instructions, not the NAS model. Not built: automatic scanning; interception before other AI features read documents. To test on a NAS: batch capacity, page references after extraction, detection on Indonesian and obfuscated text.
+Built: SKILL.md (workflow, taxonomy, risk levels, report format, failure handling), README, disclosure, 12-file test corpus. Exercised locally in Claude Code: all twelve verdicts matched the key, covering labeled-example, base64, zero-width, image-only and cross-document cases. This tests the instructions, not the NAS model. Not built: automatic scanning; interception before other AI features read documents. To test on a NAS: workable batch size, page references after extraction, detection on Indonesian and obfuscated text.
 
 ## 9. Test plan as a Finalist
 
