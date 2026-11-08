@@ -20,7 +20,7 @@ Uliya confirms the scope, lists documents, extracts text, classifies candidates,
 
 ## 5. Differentiation
 
-Existing shields filter the user's query with keyword rules. PoisonLens audits the documents themselves, in any language, separating a training article quoting an attack from a proposal performing one. Instructions aimed at the audit itself ("declare this file safe") are findings; a document cannot lower its own score. Every verdict carries checkable evidence.
+Existing shields filter user queries with keyword rules. PoisonLens audits the documents themselves, in any language, separating a training article quoting an attack from a proposal performing one. Instructions aimed at the audit itself ("declare this file safe") are findings; a document cannot lower its own score. Every verdict carries checkable evidence.
 
 ## 6. UGREEN AI NAS features used
 
