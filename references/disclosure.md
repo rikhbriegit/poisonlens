@@ -6,7 +6,8 @@ Prepared for the UGREEN Hackathon 2026 on AI NAS, Open Innovation track, in line
 
 - The document trust investigation workflow: scope confirmation, discovery, extraction, candidate identification, contextual classification, risk assignment, and evidence-based reporting.
 - The six-category threat taxonomy (Role Spoofing, Instruction Override, Data Exfiltration, Tool Hijacking, Answer Contamination, Authority Forgery).
-- The context check that separates documents that discuss manipulation from documents that attempt it.
+- The context check that separates documents that discuss manipulation from documents that attempt it, including the rule that labels, quotation marks, and code fences never lower risk on their own.
+- Obfuscation checks for encoded or hidden instructions, and per-file isolation so that one document can never lower another's risk level.
 - Detection of instructions aimed at the audit itself, so that a document cannot lower its own risk level.
 - Evidence rules: minimal quotation, credential redaction, the Unverified status, and the prohibition on fabricated excerpts, locations, or tool results.
 - The validation scenarios in SKILL.md and the calibration pairs in references/calibration.md.

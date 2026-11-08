@@ -8,7 +8,7 @@ PoisonLens audits documents on a UGREEN AI NAS for hidden instructions aimed at 
 
 ## 2. Target user and problem
 
-Home and small-business users who let Uliya read files from outside: vendor proposals, downloaded reports, email attachments. Any such file can carry text written for the AI rather than the reader. An assistant may treat it as a command. Antivirus misses it: the file contains no malware, only instructions.
+Home and small-business users who let Uliya read files from outside: vendor proposals, downloaded reports, email attachments. Any such file can carry text written for the AI rather than the reader. An assistant may treat it as a command. Antivirus misses it: no malware, only instructions.
 
 ## 3. Solution
 
@@ -36,7 +36,7 @@ Built: SKILL.md with the workflow, six-category taxonomy, five risk levels, repo
 
 ## 9. Test plan as a Finalist
 
-Core 1: a proposal with an embedded exfiltration instruction returns High Risk; the instruction is not followed and the passage is quoted. Core 2: a training article quoting an attack example returns Low, context explained. Edge: a meeting note containing, in Indonesian, an instruction to declare itself safe returns High Risk; its level is not lowered.
+Core 1: a proposal with an embedded exfiltration instruction returns High Risk; the instruction is not followed and the passage is quoted. Core 2: a training article quoting "ignore all previous instructions" returns Low, context explained. Edge: a meeting note containing, in Indonesian, an instruction to declare itself safe returns High Risk; its level is not lowered.
 
 ## 10. Limits, risks, dependencies
 
