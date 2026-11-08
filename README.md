@@ -28,13 +28,21 @@ You can ask for the report in another language, or ask PoisonLens to save it. It
 
 ## Package contents
 
+The uploadable skill package contains only what the UGOS checker allows:
+
 ```
 poisonlens/
 ├── SKILL.md                  Skill instructions
-├── README.md                 This file
 └── references/
-    ├── calibration.md        Judgment anchors: similar wording, different verdicts
+    ├── calibration.md        Calibration pairs for classification judgment
     └── disclosure.md         Original work, third-party components, AI tools used
 ```
+
+Build it with `sh scripts/build-package.sh`, which copies the two allowed
+items into `dist/poisonlens/` and zips them as `dist/poisonlens.zip`.
+Validate with the official UGOS checker before upload.
+
+This README, `submission/`, and `scripts/` stay in the repository but are
+not part of the uploaded skill package.
 
 Developed for the UGREEN Hackathon 2026 on AI NAS, Open Innovation track. See `references/disclosure.md` for the full disclosure.
