@@ -13,10 +13,12 @@ if (Test-Path $Pkg) { Remove-Item $Pkg -Recurse -Force }
 if (Test-Path $Zip) { Remove-Item $Zip -Force }
 New-Item -ItemType Directory -Path (Join-Path $Pkg 'references') -Force | Out-Null
 
-# -Raw / WriteAllText keeps the bytes as committed: no newline rewriting,
-# no BOM. The checker reads these files literally.
+# Write UTF-8 without a BOM and with LF endings, whatever the working tree
+# holds. A Windows checkout turns the committed LF into CRLF, which would
+# otherwise make the package differ byte for byte from the repository and
+# from a package built on Linux.
 function Copy-Verbatim($src, $dst) {
-  $text = [System.IO.File]::ReadAllText($src)
+  $text = [System.IO.File]::ReadAllText($src) -replace "`r`n", "`n"
   [System.IO.File]::WriteAllText($dst, $text, (New-Object System.Text.UTF8Encoding($false)))
 }
 
