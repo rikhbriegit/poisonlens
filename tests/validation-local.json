@@ -1,0 +1,47 @@
+{
+  "validator": "local-round1-package-check",
+  "official": false,
+  "pass": true,
+  "checks": [
+    {
+      "check": "frontmatter.name",
+      "pass": true,
+      "detail": "poisonlens"
+    },
+    {
+      "check": "frontmatter.description",
+      "pass": true,
+      "detail": "362 chars"
+    },
+    {
+      "check": "reference links",
+      "pass": true,
+      "detail": "2 reference files present; no missing linked file"
+    },
+    {
+      "check": "uncompressed package limits",
+      "pass": true,
+      "detail": "3 files, 27386 bytes"
+    },
+    {
+      "check": "package contents",
+      "pass": true,
+      "detail": "SKILL.md, references/calibration.md, references/disclosure.md"
+    },
+    {
+      "check": "ZIP limits",
+      "pass": true,
+      "detail": "11287 bytes"
+    },
+    {
+      "check": "ZIP contents",
+      "pass": true,
+      "detail": "poisonlens/SKILL.md, poisonlens/references/calibration.md, poisonlens/references/disclosure.md"
+    },
+    {
+      "check": "proposal word limit",
+      "pass": true,
+      "detail": "489 words"
+    }
+  ]
+}
