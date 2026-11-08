@@ -1,0 +1,31 @@
+UGOS kit path: D:\Projects\hackathon_ugreen\copy-poisonlens\kit-extract\uliya-skill-kit UGOS kit commit: b432e094edaba35bdfca58258b8e5f2130d52ba6 UGOS kit version evidence: D:\Projects\hackathon_ugreen\copy-poisonlens\kit-extract\uliya-skill-kit\data\capability-catalog.json:2 "catalogVersion": "2.0.0", checker command: node scripts/check-skill.mjs dist/poisonlens --- checker output (raw) ---
+{
+  "checkFormatVersion": "2.0.0",
+  "status": "static-pass",
+  "target": {
+    "skillName": "poisonlens"
+  },
+  "catalog": {
+    "checkedVersion": "2.0.0"
+  },
+  "files": [
+    {
+      "path": "references/calibration.md",
+      "sha256": "52776405457998e97d0a13895187bfd1e66fbb2248da2b68a6e284ad11572509"
+    },
+    {
+      "path": "references/disclosure.md",
+      "sha256": "3a3b890cab963e11146ed77726318192092169d540f15d9cbfe168d067844027"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "3a7144072ecd3ec1b8f2024d79f3de261380c1328b9e340552b828c5e5b86a20"
+    }
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 0,
+    "info": 0
+  },
+  "diagnostics": []
+}
