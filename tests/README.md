@@ -64,3 +64,13 @@ Scope respected: yes/no · Over-quoting: yes/no · Fabricated locations: yes/no
 ```
 
 A failed case is useful: note what the agent said, then decide whether the fix belongs in `SKILL.md` or is a model limitation to list in the proposal's answer 8.
+
+## Local package validation
+
+The repository includes `scripts/validate-package.py`, a deterministic local check for the constraints that can be verified without the official UGREEN checker: frontmatter, linked references, package contents, file/package size limits, ZIP contents, and proposal word count. Build `dist/poisonlens/` and `dist/poisonlens.zip` first, then run:
+
+```text
+python scripts/validate-package.py > tests/validation-local.json
+```
+
+The receipt explicitly marks itself as `official: false`; it is not a substitute for the UGREEN checker. The latest local receipt is `tests/validation-local.json`.
