@@ -111,7 +111,7 @@ For calibration pairs that anchor these judgments, see [references/calibration.m
 |---|---|
 | High Risk | At least one active attempt with clear intent to exfiltrate data, hijack tools, override instructions, or manipulate the audit |
 | Suspicious | AI-directed text with uncertain intent, or mixed discussion and attempt signals |
-| Low | An instruction-like pattern exists, but context clearly favors a benign reading (training material, quoted example) |
+| Low | An instruction-like pattern exists, but all three discussion signals hold (document purpose, surrounding explanation, generic wording) |
 | No Signal | No AI-directed instructions found in the analyzed content |
 | Not Assessable | Content could not be extracted or analyzed |
 
