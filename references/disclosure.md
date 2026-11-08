@@ -9,7 +9,7 @@ Prepared for the UGREEN Hackathon 2026 on AI NAS, Open Innovation track, in line
 - The context check that separates documents that discuss manipulation from documents that attempt it.
 - Detection of instructions aimed at the audit itself, so that a document cannot lower its own risk level.
 - Evidence rules: minimal quotation, credential redaction, the Unverified status, and the prohibition on fabricated excerpts, locations, or tool results.
-- The validation scenarios in SKILL.md.
+- The validation scenarios in SKILL.md and the calibration pairs in references/calibration.md.
 
 All of the above was newly developed during the Hackathon period.
 

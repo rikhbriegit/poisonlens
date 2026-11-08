@@ -33,6 +33,7 @@ poisonlens/
 ├── SKILL.md                  Skill instructions
 ├── README.md                 This file
 └── references/
+    ├── calibration.md        Judgment anchors: similar wording, different verdicts
     └── disclosure.md         Original work, third-party components, AI tools used
 ```
 
