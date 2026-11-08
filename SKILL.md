@@ -128,7 +128,9 @@ For calibration pairs that anchor these judgments, see [references/calibration.m
 | High Risk | At least one active attempt with clear intent to exfiltrate data, hijack tools, override instructions, or manipulate the audit |
 | Suspicious | AI-directed text with uncertain intent, or mixed discussion and attempt signals |
 | Low | An instruction-like pattern exists, but all three discussion signals hold (document purpose, surrounding explanation, generic wording) |
-| No Signal | No AI-directed instructions found in the analyzed content |
+| No Signal | No AI-directed instruction-like text found at all in the analyzed content |
+
+Low and No Signal are not interchangeable. If the document contains text addressed to an AI and the context check cleared it, the level is Low and the passage is still reported with its evidence: the user needs to see that it was found and judged, not that nothing was there. No Signal is only for a document where no such text exists. A document whose subject is AI security will often contain quoted attack text and therefore land on Low rather than No Signal.
 | Not Assessable | Content could not be extracted or analyzed |
 
 A finding whose excerpt cannot be matched to the extracted text is marked **Unverified** and does not raise the file's level.
@@ -157,7 +159,7 @@ Unverified findings: [n] (recorded, not counted toward any file's level)
 
 [File name] — [Risk level]
   Finding [ID] · [page, section, or paragraph] · [category]
-  Evidence: "[quoted passage, max two sentences, credentials redacted]"
+  Evidence: "[quoted passage, two sentences at most — never three, credentials redacted]"
   Analysis: [why this is or is not an active attempt, citing context signals]
   Benign reading: [the strongest alternative explanation, or "none found"]
   Recommendation: [action for the user]
