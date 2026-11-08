@@ -104,10 +104,10 @@ def build():
             doc.space(2)
         elif line.startswith('## '):
             doc.space(9)
-            doc.line('/F2', 11.5, esc(line[3:]))
+            doc.line('/F2', 11.5, line[3:])
             doc.space(1)
         elif line.startswith('**') and line.endswith('**'):
-            doc.line('/F2', 10.5, esc(line.strip('*')))
+            doc.line('/F2', 10.5, line.strip('*'))
             doc.space(3)
         elif line.startswith('*') and line.endswith('*') and not line.startswith('**'):
             doc.space(4)
@@ -115,7 +115,7 @@ def build():
                 doc.line('/F3', 9.5, l)
         elif line.strip() == '---':
             doc.space(3)
-            doc.line('/F1', 9.5, esc('-' * 52), lead=12)
+            doc.line('/F1', 9.5, '-' * 52, lead=12)
             doc.space(2)
         else:
             for l in wrap(line, 10.5, TEXT_W):
@@ -148,7 +148,7 @@ def build():
                   f"/Contents {cid} 0 R >>"))
         parts = ["BT"]
         for font, size, x, y, text in page:
-            parts.append(f"{font} {size} Tf 1 0 0 1 {x:.1f} {y:.1f} Tm ({text}) Tj")
+            parts.append(f"{font} {size} Tf 1 0 0 1 {x:.1f} {y:.1f} Tm ({esc(text)}) Tj")
         parts.append("ET")
         stream = '\n'.join(parts).encode('cp1252', errors='replace')
         comp = zlib.compress(stream)
