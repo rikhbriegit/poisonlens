@@ -1,5 +1,7 @@
 # PoisonLens local test corpus
 
+Two corpora: `tests/corpus/` (12 files, one vector each) and `tests/adversarial/` (10 production-shaped documents, including four hard negatives — key in `tests/ADVERSARIAL-KEY.md`).
+
 Twelve fixtures for exercising the judgment logic in `SKILL.md` outside a NAS. Everything in them is fictional. Regenerate with `python3 tests/build_corpus.py`.
 
 This tests classification only. It does not test UGOS expert agents, delegation states, extraction quality on the NAS, or the NAS model's context limits; those remain Round 2 items.
