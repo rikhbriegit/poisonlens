@@ -38,7 +38,7 @@ poisonlens/
     └── disclosure.md         Original work, third-party components, AI tools used
 ```
 
-Build it with `sh scripts/build-package.sh`, which copies the two allowed
+Build it with `sh scripts/build-package.sh` (or `powershell -File scripts/build-package.ps1` on Windows, where `sh` is absent), which copies the two allowed
 items into `dist/poisonlens/` and zips them as `dist/poisonlens.zip`.
 Validate with the official UGOS checker before upload.
 
