@@ -1,0 +1,34 @@
+kit: uliya-skill-kit 0.7.3 (capability catalog 2.0.0)
+commit: d7ee990 — SKILL.md unchanged since 6c1a01f
+checker: node scripts/check-skill.mjs <package dir>
+--- checker output (raw) ---
+{
+  "checkFormatVersion": "2.0.0",
+  "status": "static-pass",
+  "target": {
+    "skillName": "poisonlens"
+  },
+  "catalog": {
+    "checkedVersion": "2.0.0"
+  },
+  "files": [
+    {
+      "path": "references/calibration.md",
+      "sha256": "6c8c7ff57d6f9d721bfae0577e622e1e64796fbda56f95de2fde31d4c508fcee"
+    },
+    {
+      "path": "references/disclosure.md",
+      "sha256": "9d272af44a6965c49e5d9966db27094600889e9e149b3decf9ca8cc5623978df"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "1abd4d0c98986bac91b50e1e8963d627f8bb227af42d1fc9d5cba1b5e081fc90"
+    }
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 0,
+    "info": 0
+  },
+  "diagnostics": []
+}
