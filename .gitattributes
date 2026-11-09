@@ -1,3 +1,10 @@
+# Markdown stays LF in the working tree on every platform. Without this a
+# Windows checkout rewrites the newlines, git reports the file as modified
+# when nothing changed, and a pull can be refused over a phantom diff.
+*.md    text eol=lf
+*.sh    text eol=lf
+*.py    text eol=lf
+
 # Test fixtures must stay byte-identical on every platform.
 # Without this, Windows checkout rewrites newlines inside the PDFs and
 # corrupts their object structure.
