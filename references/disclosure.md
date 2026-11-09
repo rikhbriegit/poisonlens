@@ -1,6 +1,6 @@
 # PoisonLens — Development Disclosure
 
-Prepared for the UGREEN Hackathon 2026 on AI NAS, Open Innovation track, in line with the Round 1 disclosure requirements.
+Prepared for the UGREEN Hackathon 2026 on AI NAS, Automate Your Workflow track, in line with the Round 1 disclosure requirements.
 
 ## Principal functionality developed for this Hackathon
 

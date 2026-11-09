@@ -1,6 +1,6 @@
 # PoisonLens — AI Document Trust Investigator
 
-**UGREEN Hackathon 2026 on AI NAS · Open Innovation**
+**UGREEN Hackathon 2026 on AI NAS · Automate Your Workflow**
 
 ## 1. What the Skill does
 
@@ -12,7 +12,7 @@ Home and small-business users who let Uliya read outside files: vendor proposals
 
 ## 3. Solution
 
-An on-demand, read-only Skill that reads each document, separates text addressed to an AI from ordinary content, judges whether it discusses manipulation or attempts it, and reports the quoted passage, location, category, reasoning and action.
+An on-demand, read-only Skill that reads each document, separates text addressed to an AI from ordinary content, judges whether it discusses manipulation or attempts it, and reports the passage, location, category, reasoning and action.
 
 ## 4. Main user flow
 

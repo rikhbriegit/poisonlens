@@ -45,4 +45,4 @@ Validate with the official UGOS checker before upload.
 This README, `submission/`, and `scripts/` stay in the repository but are
 not part of the uploaded skill package.
 
-Developed for the UGREEN Hackathon 2026 on AI NAS, Open Innovation track. See `references/disclosure.md` for the full disclosure.
+Developed for the UGREEN Hackathon 2026 on AI NAS, Automate Your Workflow track. See `references/disclosure.md` for the full disclosure.
